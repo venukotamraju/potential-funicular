@@ -1,0 +1,378 @@
+/* ---------------Website Layout - 2 column-------- */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   background: #fcfcfc;
+}
+
+/*create two equal columns that floats next to each other  */
+.column{
+    float:left;
+    width:50%;
+    padding: 15px;
+}
+
+/* clear floats after the columns */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/*-------- Responsive layout - makes the three columns stack on top of each other instead of next to each other ---------*/
+@media screen and (max-width:600px) {
+    .column{
+        width: 100%;
+    }
+}
+/*-------xx Media queries for Responsiveness : Web Layout :END xx-------*/
+
+/* xx------------ Website Layout: END --------------xx  */
+
+
+
+
+/* ----------Header----------- */
+.header{
+    background-color: #f1f1f1;
+    padding: 20px;
+
+}
+/* ----------Header : END */
+
+
+/*-------Main Title------- */
+#main_head{
+    font-family: monospace;
+    font-weight: bolder;
+    font:small-caps;
+    font-size: 35px;
+    border:solid 1px black;
+    padding: 0 10px;
+}
+/*-------Main Title : END------- */
+
+
+/* ---------------Navigation Bar--------------- */
+.main_nav{
+    font-family: monospace;
+    font-weight:bolder;
+    font-size: large ;
+}
+ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: right;
+    border-right: solid 1px white;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover{
+    background-color: #000000;
+}
+
+ul.topnav li .active {
+    background-color: #04aa6d;
+}
+
+ul.topnav li.left{
+    float: left;
+}
+
+/* responsiveness - media queries for nav bar */
+@media screen and (max-width: 600px){
+    ul.topnav li.left,
+    ul.topnav li {float: none;}
+}
+/* --------------Navigation bar : END------------- */
+
+
+/* ------body styling--------- */
+
+/* ---Disclaimer and its contents--- */
+.disclaimer h3{ 
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding: 0 0;
+}
+.disclaimer p{
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* ------Disclaimer and its contents: END----- */
+
+/* ----Styling Quotes and its contents----- */
+
+
+.quote {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 0 20px;
+    font-variant: small-caps;
+    /* background: #333; */
+    /* width :  20em; */
+    /* background:#111; */
+    
+}
+    
+.quote p{
+    color: white;
+    margin: 0em .5em 0 0em;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    background: #111;
+    padding: .7em 0 0.7em 1.3em;
+    border-radius: 5em;
+}
+@media screen and (max-width:600px){
+    .quote p{
+        max-width: 500px;
+        line-height: 10px;
+        font-size:12px;
+        margin: 10px auto;
+    }
+}
+    /* ----Quote: END------------- */
+
+
+
+/* ------------Column -1 and column -2 titles---------------------- */
+#non_tech,#tech {
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size:25px;
+    border-style:dotted;
+    border-radius: 10px;
+    margin: 0 10em auto auto;
+}
+@media screen and (max-width:600px){
+    #non_tech,#tech{
+        margin:auto;
+    }
+}
+/* ------------xxxxColumn -1 and column -2 titlesxxxxx---------------------- */
+
+
+/* ------------Column -1 : END---------------------- */
+
+
+
+
+/* ------------xxxxxxxxColumn -1 : ENDxxxxxxxxxxx---------------------- */
+
+
+
+/* --------------------------------------------------- */
+
+
+
+/* ------------Column -2---------------------- */
+
+
+
+/* ------------xxxxxxxxColumn -2 : ENDxxxxxxxxxxx---------------------- */
+
+
+/* --------Styling Footer--------------- */
+footer{
+    font-family: sans-serif;
+    position:static;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background: #111;
+    height:auto;
+    width:100vw;
+    text-align: center;
+    padding-top:40px;
+    color: #fff;
+}
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer_content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer_content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size:14px;
+    color: #cacdd2
+}
+.footer-bottom{
+    background: #000;
+    width:100vw; /*----- VW --------- */
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align:center;
+}
+.footer-bottom p a{
+    color:#44bae8;
+    font-size: 16px;
+    text-decoration:none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .5;
+    font-weight: 200;
+    float:left;
+}
+@media screen and (max-width:600px){
+    .footer-menu ul{
+        display:flex;
+        margin-top:10px;
+        margin: bottom 20px;
+    }
+}
+
+ul.socials{
+    position: static;
+    top:50%;
+    left:50%;
+    transform:translate(0%,0%);
+    margin:0;
+    padding:0;
+    display:flex;
+    
+}
+ul.socials li{
+    list-style: none;
+}
+ul.socials li a {
+    display:block;
+    position:relative;
+    width:30px;
+    height:30px;
+    line-height:15px;
+    font-size:15px;
+    text-align:center;
+    text-decoration:none;
+    color:#404040;
+    margin:30px 20px;
+    transition:.5s;
+}
+ul.socials li a span{
+    position: absolute;
+    transition:transform .5s;
+}
+ul.socials li a span:nth-child(1),
+ul.socials li a span:nth-child(3){
+    width:40px;
+    height:2px;
+    background:#404040
+}
+ul.socials li a span:nth-child(1) {
+    top: -.2cm;
+    left: -.1cm;
+    transform-origin:right;
+}
+ul.socials li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition:transform .5s;
+}
+  
+ul.socials li a span:nth-child(3) {
+    bottom:-.2cm;
+    left:-.1cm;
+    transform-origin: left;
+}
+ul.socials li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform .5s;
+}
+  
+ul.socials li a span:nth-child(2),
+ul.socials li a span:nth-child(4){
+    width:4px;
+    height:100%;
+    background:#404040;
+}
+ul.socials li a span:nth-child(2) {
+    top:0cm;
+    left:-.2cm;
+    transform:scale(0);
+    transform-origin: bottom;
+}
+ul.socials li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition:transform .5s;
+}
+ul li a span:nth-child(4) {
+    top:0;
+    right:-.2cm;
+    transform:scale(0);
+    transform-origin: top;
+}
+ul.socials li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition:transform .5s;
+}
+#facebook:hover{
+    background:#3b5998
+}
+#facebook:hover span{
+    background: #3b5998;
+}
+#twitter:hover{
+    background:#1da1f2;
+}
+#twitter:hover span{
+    background: #1da1f2
+}
+#instagram:hover{
+    background: #c32aa3;
+}
+
+#instagram:hover span{
+    background:#c32aa3;
+}
+#linkedin:hover{
+    background: #f5f6f7;
+}
+#linkedin:hover span{
+    background: #17b1e0;
+}
+
+
+
+/* ---------footer : END --------------------- */
