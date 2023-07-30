@@ -171,7 +171,7 @@ ul.topnav li.left{
     font-size:25px;
     border-style:dotted;
     border-radius: 10px;
-    margin: 0 10em auto auto;
+    /* margin: 0 10em auto auto; */
 }
 @media screen and (max-width:600px){
     #non_tech,#tech{
@@ -181,8 +181,51 @@ ul.topnav li.left{
 /* ------------xxxxColumn -1 and column -2 titlesxxxxx---------------------- */
 
 
-/* ------------Column -1 : END---------------------- */
+/* ------------Column -1 ---------------------- */
 
+/* ----War------ */
+.war_container{
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    border: 2px solid rgb(247, 107, 42);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.war_container img {
+    vertical-align: middle;
+}
+.war_container .war_container_content{
+    position:absolute;
+    bottom: 0;
+    background: rgb(0,0,0); /* Fallback color*/
+    background: rgba(0, 0, 0, 0.5); /* Black Background with 0.5 opacity*/
+    color: #f1f1f1;
+    width:100%;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.war_container_content a{
+    font-size: 1.5em;    
+    font-family: sans-serif;
+    padding: 0 20px;
+    font-variant: small-caps;
+    color: #f57023;
+    text-decoration: none;
+}
+.war_container :hover{
+    /* display: block; */
+    background: rgb(255, 255, 255);
+    background:  rgba(255, 255, 255, 0.9);
+    transition: 0.4s;
+    color:#000;
+}
+.war_container_content div :hover{
+    color:white;
+    transition: 0.5sec;
+    background-color: black;
+}
+/* --xxx--War--xxx---- */
 
 
 
@@ -196,7 +239,49 @@ ul.topnav li.left{
 
 /* ------------Column -2---------------------- */
 
-
+/* ----Quantum Computing------- */
+.quantum_container{
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    border: 2px solid rgb(132, 243, 28);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.quantum_container img{
+    vertical-align: middle;
+}
+.quantum_container_content{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0,0,0);/*fallback color*/
+    background: rgba(0, 0, 0, 0.5); /*black background with 0.5 opacity*/
+    color: #f1f1f1;
+    width:100%;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.quantum_container_content a{
+    font-size: 1.5em;    
+    font-family: sans-serif;
+    padding: 0 20px;
+    font-variant: small-caps;
+    color: #74f50b;
+    text-decoration: none;
+}
+.quantum_container :hover{
+    background: rgb(255, 255, 255);
+    background:  rgba(255, 255, 255, 0.9);
+    transition: 0.4s;
+    color:#000;
+}
+.quantum_container_content div :hover{
+    /* display: block; */
+    color:white;
+    transition: 0.5sec;
+    background-color: black;
+}
+/* -------xxx--------xxxx---- */
 
 /* ------------xxxxxxxxColumn -2 : ENDxxxxxxxxxxx---------------------- */
 
