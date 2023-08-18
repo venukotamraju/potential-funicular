@@ -226,8 +226,6 @@ ul.topnav li.left{
     color: #FC7D29;
     font-size: 25px;
 }
-@media screen and (max-width: 600px){
-}
 .content_child_2 p span{
     margin-left: 12%;
     color: #10b47e;
@@ -264,7 +262,7 @@ ul.topnav li.left{
 /* Container for skill bars */
 .skills_container{
     /*Full width*/
-    width: 90%;
+    width: 86%;
     background-color: #ddd;
     /* border: 1px solid black; */
     height: 2px;
@@ -326,10 +324,15 @@ ul.topnav li.left{
     position: relative;
     max-width: 450px;
     height: 200px;
-    margin: 10px auto;
+    margin: 30% auto;
     /* border: 2px solid rgb(247, 107, 42); */
     border-radius: 30px;
     overflow: hidden;
+}
+@media screen and ( max-width : 600px){
+    .kayatri_logo{
+        margin: 10px auto auto 1%;
+    }
 }
 .circular_k{
     text-align: center;
@@ -350,6 +353,110 @@ ul.topnav li.left{
     font-variant: small-caps;
     font-family: sans-serif;
 }
+.kayatri_text h3{
+    text-align: center;
+    /* border: 1px solid black; */
+    font-size: 30px;
+    font-variant: small-caps;
+    font-family: sans-serif;
+}
+.kayatri_text p {
+    margin: 30px;
+    font-size: 21px;   
+}
+.content_child_5 ul{
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+}
+.content_child_5 ul li{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    /* text-align: center; */
+}
+.content_child_5 div{
+    position: relative;
+    
+    height: 150px;
+    width: 300px;
+    border: 1px solid black;
+}
+.certificates div{
+    /* position: absolute; */
+    border: none;
+    box-sizing: border-box;
+    height: 40%;
+    /* width: 50px; */
+    position:absolute;
+    bottom: 0;
+    /* background: rgb(13, 110, 253); Fallback color */
+    /* background: rgba(13, 110, 253, 0.5); Black Background with 0.5 opacity */
+    color: #f1f1f1;
+    width:100%;
+    padding: 5%;
+    font-family: sans-serif;
+}
+.certificates div a {
+    text-decoration: none;
+}
+.certificates div a button{
+    width: 50%;
+    height: 100%;
+    /* font-size: 15px; */
+    /* font-weight: bold; */
+    font-variant: small-caps;
+    background-color:rgba(5, 9, 255, 0.562);
+    color: white;
+    border-style: none;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.certificates div a button:hover{
+    background-color:rgb(59, 5, 255);
+    transition: ease-out 500ms;
+}
+#python_001{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/python_001.png");
+    /* border: none; */
+}
+#soft_eng{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/certificate_se.png");
+    /* border: none; */
+}
+#linux{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/certificate_linux.png");
+    /* border: none; */
+}
+#python_002{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/python_002.png");
+    /* border: none; */
+}
+#git{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/certficate_git.png");
+    /* border: none; */
+}
+
+/* @media screen and (max-width: 600px){
+    {
+        width: 100%;
+    }
+} */
 /* --------xxxxxxx---collapsible---xxxxxxxxxxxx--------- */
 
 /* --------Styling Footer--------------- */
