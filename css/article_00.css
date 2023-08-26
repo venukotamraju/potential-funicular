@@ -4,12 +4,16 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 body{
+    height: 100%;
    margin: 0;
    background: #fcfcfc;
    overflow-x: hidden;
+   font-family: sans-serif; 
 }
 
 /*create two equal columns that floats next to each other  */
@@ -100,6 +104,112 @@ ul.topnav li.left{
     padding: 0 10px;
 }
 /*-------Main Title : END------- */
+
+
+
+/* CONTENT */
+
+/* .sample{
+    border: 1px solid black;
+    position: relative;
+    display:flex;
+    position: relative;
+}
+.dropcap_element_slot{
+    font-size: 64px;
+    font-family:sans-serif;
+    font-style: normal;
+    line-height: 52px;
+    float: left;
+    margin-right:8px;
+    display: flex;
+} */
+
+article{
+    
+    background-color: #000000f1;
+    color: white;
+    margin-bottom:none;
+}
+.titles{
+    /* border: 1px solid rgb(255, 16, 16); */
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.titles h2{
+    font-size: 25px;
+    padding-top:30px;
+    text-align: right;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    font-variant: small-caps;
+    margin-right: 3px;
+    margin-top: 50  px;
+}
+.titles p{
+    font-size: 120%;
+    margin-left: 10px;
+    margin-right: 3px;
+    text-align: justify;
+}
+.title_05 h3{
+    font-variant: small-caps;
+}
+
+.title_05 ul li{
+    padding: 10px;
+}
+.title_05 ul li p{
+    padding: 6px;
+}
+.special{
+    color: #04aa6d;
+}
+.title_06 p{
+    line-height: 25px;
+    /* border: 1px solid green; */
+}
+
+.credits{
+    /* border: 1px solid black; */
+    /* background-color: #aec1c77a; */
+    color: #697e7dc4;
+    display: inline-block;
+    width: 20%;
+    padding: 15px;
+    border-radius: 20px;
+    /* box-sizing: border-box; */
+    box-shadow: 3.5px -3px 1px rgb(0, 119, 255)
+}
+.credits p{
+    padding-left: 20px;
+    line-height: 25px;
+    font-variant: small-caps;
+}
+.credits p span{
+    font-size: 24px;
+    color: #3ac0e9;
+}
+/* xxxxx------CONTENT------xxxxx */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------Styling Footer--------------- */
 footer{
@@ -276,6 +386,7 @@ ul.socials li a:hover span:nth-child(4) {
 #linkedin:hover span{
     background: #17b1e0;
 }
+
 
 
 /* ---------footer : END --------------------- */

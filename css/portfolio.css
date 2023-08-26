@@ -105,7 +105,7 @@ ul.topnav li.left{
 
 /* -----hero image-------- */
 .hero_image{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/venu_pic_hero.png");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/venu_pic_hero.png");
     height: 90%;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,7 +185,8 @@ ul.topnav li.left{
     color: black;
     font-weight: bold;
     float: left;
-    margin-right: 10px;
+    margin: none;
+    /* margin-right: 10px; */
     
 }
 .collapsible::before{
@@ -193,7 +194,8 @@ ul.topnav li.left{
     color: black;
     font-weight: bold;
     float: right;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin: none;
 }
 .active:after{
     content: "\2212";
@@ -217,8 +219,16 @@ ul.topnav li.left{
 .content_child_1, .content_child_2{
     text-align: justify;
 }
-.content_child_1 p, .content_child_2 p, .content_child_3 p{
-    margin: 41px;
+.content_child_1 p {
+    margin: 20px;
+    font-size: 21px;
+}
+.content_child_2 p{
+    margin: 40px;
+    font-size: 21px;
+}
+.content_child_3 p{
+    margin: 20px;
     font-size: 21px;
 }
 .content_child_1 p span{
@@ -361,7 +371,7 @@ ul.topnav li.left{
     font-family: sans-serif;
 }
 .kayatri_text p {
-    margin: 30px;
+    margin: 12px;
     font-size: 21px;   
 }
 .content_child_5 ul{
@@ -604,6 +614,10 @@ ul.socials li a:hover span:nth-child(4) {
     transform: scale(1);
     transform-origin: bottom;
     transition:transform .5s;
+}
+#facebook,#twitter,#instagram,#linkedin,#github{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 #facebook:hover{
     background:#3b5998
