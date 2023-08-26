@@ -175,7 +175,7 @@ article{
     /* background-color: #aec1c77a; */
     color: #697e7dc4;
     display: inline-block;
-    width: 20%;
+    width: 260px;
     padding: 15px;
     border-radius: 20px;
     /* box-sizing: border-box; */
@@ -189,6 +189,11 @@ article{
 .credits p span{
     font-size: 24px;
     color: #3ac0e9;
+}
+@media screen and (max-width:600px){
+    .credits{
+        width:60%;
+    }
 }
 /* xxxxx------CONTENT------xxxxx */
 
